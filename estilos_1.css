@@ -15,7 +15,11 @@ body{
     overflow: hidden;
     margin:0;
 }
+
+
 .quiz_container ,.encabezado{ 
+    display: flex;
+    flex-direction: column;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 10px 2px rgba(100,100,100,0.1);
@@ -34,3 +38,32 @@ h2{
     border-radius: 10px;
    
 }
+/* Estilo para las respuestas */
+.quiz_header {
+    display: block; /* Muestra cada respuesta en una nueva línea */
+    margin-bottom: 10px; /* Espacio entre cada respuesta */
+}
+
+/* Estilo para el botón */
+button {
+    margin-top: 10px; /* Espacio entre las respuestas y el botón */
+    background-color: blue; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Relleno interno */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+/* Cambiar el color del botón cuando se pasa el mouse sobre él */
+button:hover {
+    background-color: red; /* Color de fondo del botón al pasar el mouse sobre él */
+}
+.quiz-answer {
+    display: flex;
+     /* Para invertir la dirección de los elementos */
+    align-items: center; /* Para alinear los elementos verticalmente */
+}
+.encabezado {
+    margin-bottom: 20px; /* Espacio entre cada sección */
+}
+
